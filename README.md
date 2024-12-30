@@ -1,4 +1,4 @@
-# multiagent_ipo
+
 # IPO Analysis & Market Research Tool
 
 🤖 **IPO Analysis & Market Research** is a Streamlit-based application designed to help users analyze Initial Public Offerings (IPOs) and market trends using advanced AI tools. It integrates **CrewAI** agents, **YouTube channel analysis**, and web search tools to provide comprehensive insights.
@@ -42,65 +42,94 @@ The code includes the following libraries and tools:
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
    cd your-repo-name
-Install dependencies:
+   ```
 
-bash
-Copy code
-pip install -r requirements.txt
-Set up environment variables:
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Create a .env file in the project directory.
-Add your API keys and credentials for tools like CrewAI and SerperDevTool.
-Run the application:
+3. Set up environment variables:
+   - Create a `.env` file in the project directory.
+   - Add your API keys and credentials for tools like `CrewAI` and `SerperDevTool`.
 
-bash
-Copy code
-streamlit run app.py
-Usage
-Enter IPO Details: In the sidebar, input the IPO name you want to analyze.
-Generate Content: Click the "Generate Content" button to create a detailed report.
-YouTube Analysis: Provide a YouTube channel link and click "Generate Analysis from YouTube Video" for video-based insights.
-View Results: The generated content will appear in the main section of the app.
-Example Outputs
-IPO Analysis Report
-Executive Summary: Key findings and insights.
-Market Sentiment: Strengths and risks of the IPO.
-Company Data: Year-wise revenue, profit, and asset information.
-IPO Objectives: Fund-raising purpose and objectives.
-YouTube Video Summary
-Detailed Insights: Extracted information from videos.
-Blog Post: Comprehensive and engaging markdown content.
+4. Run the application:
+   ```bash
+   streamlit run app.py
+   ```
 
-File Structure
-plaintext
-Copy code
+---
+
+## Usage
+
+1. **Enter IPO Details**: In the sidebar, input the IPO name you want to analyze.
+2. **Generate Content**: Click the "Generate Content" button to create a detailed report.
+3. **YouTube Analysis**: Provide a YouTube channel link and click "Generate Analysis from YouTube Video" for video-based insights.
+4. **View Results**: The generated content will appear in the main section of the app.
+
+---
+
+## Example Outputs
+
+### IPO Analysis Report
+- **Executive Summary**: Key findings and insights.
+- **Market Sentiment**: Strengths and risks of the IPO.
+- **Company Data**: Year-wise revenue, profit, and asset information.
+- **IPO Objectives**: Fund-raising purpose and objectives.
+
+### YouTube Video Summary
+- **Detailed Insights**: Extracted information from videos.
+- **Blog Post**: Comprehensive and engaging markdown content.
+
+---
+
+## File Structure
+
+```plaintext
 ├── app.py               # Main application script
 ├── requirements.txt     # Python dependencies
 ├── .env                 # Environment variables (not included in repo)
 ├── README.md            # Documentation
 └── data/                # Folder for saved analysis files (optional)
+```
 
+---
 
-Technical Details
-Core Libraries:
-streamlit: For building the web app interface.
-CrewAI: For task delegation and agent orchestration.
-dotenv: For managing environment variables.
-Agents:
-Senior Market Research Analyst: Conducts comprehensive IPO analysis.
-Content Writer: Crafts engaging and informative blog posts.
-YouTube Researcher: Extracts and summarizes relevant video content.
-Requirements
-Python 3.7 or later
-API keys for:
-CrewAI tools
-SerperDevTool
-Contributing
+## Technical Details
+
+- **Core Libraries**:
+  - `streamlit`: For building the web app interface.
+  - `CrewAI`: For task delegation and agent orchestration.
+  - `dotenv`: For managing environment variables.
+- **Agents**:
+  - **Senior Market Research Analyst**: Conducts comprehensive IPO analysis.
+  - **Content Writer**: Crafts engaging and informative blog posts.
+  - **YouTube Researcher**: Extracts and summarizes relevant video content.
+
+---
+
+## Requirements
+
+- Python 3.7 or later
+- API keys for:
+  - `CrewAI` tools
+  - `SerperDevTool`
+
+---
+
+## Contributing
+
 Contributions are welcome! Please fork the repository and create a pull request for any changes or enhancements.
 
-License
+---
+
+## License
+
 This project is licensed under the MIT License.
 
-Acknowledgements
-Built with ❤️ using Streamlit and CrewAI.
-Powered by Cohere and command-r model.
+---
+
+## Acknowledgements
+
+- Built with ❤️ using [Streamlit](https://streamlit.io) and [CrewAI](https://crewai.io).
+- Powered by [Cohere](https://cohere.ai) and `command-r` model.
